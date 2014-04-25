@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/background">
+  
+  	<TableLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:stretchColumns="0"
+		android:shrinkColumns="0"
+		android:id="@+id/Statuses_Header">
+		<TableRow>
+		  	<EditText
+				android:id="@+id/EditText_StatusMessage"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content"
+			  	android:imeOptions="actionDone" 
+			  	android:layout_alignParentLeft="true">
+			</EditText>
+			<Button
+				android:text="Post Status"
+				android:textColor="#FFFFFF"
+				android:id="@+id/Button_UpdateStatus"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content" 
+			  	android:layout_alignParentRight="true"
+			  	android:background="@drawable/button">
+			</Button>
+		</TableRow>
+	</TableLayout>
+	
+	<ListView
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_below="@+id/Statuses_Header"
+	  android:layout_above="@+id/Statuses_Footer"
+	  android:choiceMode="singleChoice"
+	  android:listSelector="@drawable/list_selector"
+	  android:id="@+id/ListView_StatusMessages">
+	</ListView>
+	  
+  	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:id="@+id/Statuses_Footer">
+		  	<Button
+				android:text="Send Message to Selected Golfers"
+				android:textColor="#FFFFFF"
+				android:id="@+id/Button_SendMessage"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content" 
+			  	android:layout_centerHorizontal="true"
+			  	android:gravity="center"
+			  	android:padding="10dip"
+			  	android:background="@drawable/button">
+			</Button>
+			
+	</RelativeLayout>
+	
+</RelativeLayout>

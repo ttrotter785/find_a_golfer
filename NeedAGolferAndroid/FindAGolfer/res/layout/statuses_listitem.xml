@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:paddingLeft="10dip"
+  android:background="@color/list_item_bg">
+  
+  <CheckBox 
+  	android:background="@drawable/small_checkbox_bg" 
+  	android:button="@drawable/small_checkbox" 
+  	android:id="@+id/CheckBox_SendMessage"  
+  	android:layout_width="wrap_content" 
+  	android:layout_height="wrap_content"
+  	android:layout_centerVertical="true"
+  	android:focusable="false"
+  	android:focusableInTouchMode="false"
+  	android:text="" />
+  
+  <TextView
+  	android:id="@+id/TextView_StatusMessage"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_toRightOf="@+id/CheckBox_SendMessage"  
+  	android:text="Status Message"
+  	android:textColor="#000000"
+  	android:textSize="18dip" />
+  	
+  <TextView
+  	android:id="@+id/TextView_ScreenName"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@+id/TextView_StatusMessage"  
+  	android:layout_toRightOf="@+id/CheckBox_SendMessage"
+  	android:text="Screen Name"
+	android:textColor="#000000"
+  	android:paddingRight="10dip"
+  	android:textSize="10dip" />
+  	
+  <TextView
+  	android:id="@+id/TextView_01"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@+id/TextView_StatusMessage"  
+  	android:layout_toRightOf="@+id/TextView_ScreenName"
+	android:textColor="#000000"
+  	android:text="Handicap: "
+  	android:textSize="10dip" />
+  
+   <TextView
+  	android:id="@+id/TextView_Handicap"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@+id/TextView_StatusMessage"  
+  	android:layout_toRightOf="@+id/TextView_01"
+	android:textColor="#000000"
+  	android:text="17"
+  	android:paddingRight="10dip"
+  	android:textSize="10dip" />
+
+  	
+  	<TextView
+  	android:id="@+id/TextView_WhenUpdated"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_below="@+id/TextView_StatusMessage"  
+  	android:layout_toRightOf="@+id/TextView_Handicap"
+	android:textColor="#000000"
+  	android:text="3 hours ago"
+  	android:paddingRight="10dip"
+  	android:textSize="10dip" />
+  	
+  <RatingBar
+  	android:id="@+id/RatingBar_List"
+  	style="@style/golfRatingBarSmall"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:numStars="5"
+  	android:isIndicator="true"
+  	android:focusable="false"
+  	android:focusableInTouchMode="false"
+  	android:layout_below="@+id/TextView_StatusMessage"  
+  	android:layout_alignParentRight="true" />
+
+</RelativeLayout>

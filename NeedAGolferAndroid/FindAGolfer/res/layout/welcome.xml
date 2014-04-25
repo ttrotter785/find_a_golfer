@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background">
+	
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:orientation="vertical"
+	  android:padding="10dip">
+	   	 
+	  <TextView 
+	  	 android:layout_width="wrap_content"
+	  	 android:layout_height="wrap_content"
+	  	 android:textSize="18dip"
+	  	 android:textColor="#000000"
+	  	 android:text="Welcome!" />	 
+	
+		<TextView 
+	  	 android:layout_width="wrap_content"
+	  	 android:layout_height="wrap_content"
+	  	 android:paddingTop="10dip"
+	  	 android:textSize="14dip"
+	  	 android:textColor="#000000"
+	  	 android:text="Thanks for installing Find A Golfer.  This application should help you find other golfers in your vicinity that are ready to play, but can't find someone to golf with." />
+	  	 
+	  	 <TextView 
+	  	 android:layout_width="wrap_content"
+	  	 android:layout_height="wrap_content"
+	  	 android:paddingTop="10dip"
+	  	 android:textSize="14dip"
+	  	 android:textColor="#000000"
+	  	 android:text="This application has a social-network style status feed, allowing anonymous golfers to shout out their intentions or plans to other local golfers.  You can then respond directly, PRIVATELY, to golfers you might be interested in playing with.  This application has a full rating and commenting system, and golfer profiles include handicap, so you can filter out the rookies from the pros." />	 
+	</LinearLayout>
+</ScrollView>

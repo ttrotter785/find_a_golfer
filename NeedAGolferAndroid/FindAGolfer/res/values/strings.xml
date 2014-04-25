@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, NeedAGolfer!</string>
+    <string name="app_name">Find a Golfer</string>
+    <string name="base_url">http://services.needagolfer.com</string>
+    <string name="intentextras_golfer_keyname">com.needagolfer.golfer</string>
+    <string name="intentextras_golfer_viewprofileid">com.needagolfer.viewprofileid</string>
+    <string name="intentextras_golfer_viewcourseid">com.needagolfer.viewcourseid</string>
+    <string name="config_service_url">http://services.needagolfer.com/ConfigService.svc/config/%s</string>
+</resources>

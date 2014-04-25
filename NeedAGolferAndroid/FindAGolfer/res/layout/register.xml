@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+  	
+	<RelativeLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:myapp="http://schemas.android.com/apk/res/com.findagolfer.mobile"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:background="@drawable/background">
+	  
+	    <ImageView
+	    	android:id="@+id/ImageView_Header_Register" 
+	    	android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/header" />
+			
+	  	<EditText android:id="@+id/EditText_Register_UserName" 
+				android:hint="Screen Name" 
+				android:layout_width="200dip" 
+				android:layout_height="wrap_content" 
+				android:imeOptions="actionNext"
+				android:maxLines="1"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="10dip"
+				android:layout_below="@+id/ImageView_Header_Register"
+				/>
+		<EditText 
+				android:id="@+id/EditText_Register_Password" 
+				android:hint="Password" 
+				android:layout_width="200dip" 
+				android:layout_height="wrap_content" 
+				android:imeOptions="actionNext" 
+				android:password="true"
+				android:maxLines="1"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/EditText_Register_UserName" />
+				
+		<EditText 
+				android:id="@+id/EditText_Register_ConfirmPassword" 
+				android:hint="Confirm Password" 
+				android:layout_width="200dip" 
+				android:layout_height="wrap_content" 
+				android:imeOptions="actionNext" 
+				android:password="true"
+				android:maxLines="1"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/EditText_Register_Password" />
+				
+		<EditText 
+				android:id="@+id/EditText_Register_Email" 
+				android:hint="Email" 
+				android:layout_width="200dip" 
+				android:layout_height="wrap_content" 
+				android:imeOptions="actionNext" 
+				android:inputType="textEmailAddress"
+				android:maxLines="1"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/EditText_Register_ConfirmPassword" />
+				
+		<EditText 
+				android:id="@+id/EditText_Register_Handicap" 
+				android:hint="Handicap" 
+				android:layout_width="200dip" 
+				android:layout_height="wrap_content" 
+				android:imeOptions="actionDone" 
+				android:inputType="numberSigned"
+				android:maxLines="1"
+				android:layout_centerHorizontal="true"
+				android:layout_below="@+id/EditText_Register_Email" />	
+		
+		<Button android:id="@+id/Button_Register"
+		   			android:text="Sign me up!"
+		   			android:textColor="#FFFFFF"
+		   			android:layout_height="wrap_content" 
+		   			android:layout_width="wrap_content"
+		   			android:layout_below="@+id/EditText_Register_Handicap"
+		   			android:layout_centerHorizontal="true"
+		   			android:gravity="center"
+		   			android:background="@drawable/button"/>	
+		
+		<com.admob.android.ads.AdView
+					android:id="@+id/ad_register"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					myapp:backgroundColor="#000000"
+					myapp:primaryTextColor="#FFFFFF"
+					myapp:secondaryTextColor="#CCCCCC"
+					android:layout_below="@+id/Button_Register"
+					android:paddingTop="30dip"/>		
+	</RelativeLayout>
+</ScrollView>

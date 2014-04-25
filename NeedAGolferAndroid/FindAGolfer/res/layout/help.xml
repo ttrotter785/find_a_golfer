@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#FFFFFF">
+
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:background="#FFFFFF"
+	  android:orientation="vertical"
+	  android:padding="5dip">
+	  
+	  <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:textColor="#000000"
+	  	android:text="Notifications"
+	  	android:textSize="20dip"></TextView>
+	  	
+	  <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:paddingTop="10dip"
+	  	android:textColor="#000000"
+	  	android:text="Tap or drag this bar up to view private messages that have been sent to you by other Find A Golfer users.  You can reply to messages here or view the sender's profile."></TextView>
+	  
+	  <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:textColor="#000000"
+	  	android:paddingTop="10dip"
+	  	android:text="Find Nearby Golfers"
+	  	android:textSize="20dip"></TextView>
+	  	
+	  <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:paddingTop="10dip"
+	  	android:textColor="#000000"
+	  	android:text="This button will take you to a social-network style status feed of other Find A Golfer users.  From there you can post a status (like 'Playing Course A at Noon.  Need Two.'), view other golfers' profiles, rate them, and send them private messages in response to their postings."></TextView>
+	  
+	   <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:paddingTop="10dip"
+	  	android:textColor="#000000"
+	  	android:text="The list is ordered by the time updated, submitter's handicap, and overall rating, ensuring that the top golfers are always at the top of your list."></TextView>
+	  
+	  <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:textColor="#000000"
+	  	android:paddingTop="10dip"
+	  	android:text="Find Nearby Golf Courses"
+	  	android:textSize="20dip"></TextView>
+	  	
+	  	<TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:paddingTop="10dip"
+	  	android:textColor="#000000"
+	  	android:text="This button will take you to a list of nearby golf courses.  From that list you can view individual course information.  The individual course screen will allow you to place phone calls directly to a course, and view it on a map."></TextView>
+	  
+	  <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:textColor="#000000"
+	  	android:paddingTop="10dip"
+	  	android:text="Settings and Preferences"
+	  	android:textSize="20dip"></TextView>
+	  	
+	  <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:paddingTop="10dip"
+	  	android:textColor="#000000"
+	  	android:text="Controls your course list and nearby golfer list.  From here you can hide your status update (Available to Play setting), and cast a wider net when looking for nearby golfers and courses."></TextView>
+	  
+	  <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:textColor="#000000"
+	  	android:paddingTop="10dip"
+	  	android:text="View My Feedback"
+	  	android:textSize="20dip"></TextView>
+	  	
+	  <TextView
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:paddingTop="10dip"
+	  	android:textColor="#000000"
+	  	android:text="A list of comments and ratings that have been submitted by other Find A Golfer users regarding your course performance or pleasantness to play with."></TextView>
+	  
+	  <Button
+		android:text="OK Thanks for the Info"
+		android:id="@+id/Button_Help_Cancel"
+		android:layout_marginTop="10dip"
+	  	android:textColor="#FFFFFF"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+	  	android:layout_centerHorizontal="true"
+	  	android:gravity="center"
+	  	android:background="@drawable/button">
+		</Button>
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/res/com.findagolfer.mobile"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background">
+
+	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent">
+  	<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent">
+  			
+		<ImageView android:id="@+id/ImageView_Header"
+	   			android:layout_height="wrap_content" 
+	   			android:layout_width="fill_parent"
+	   			android:layout_centerHorizontal="true"
+	   			android:background="@drawable/header" />
+	   			
+		<Button android:id="@+id/Button_ViewAvailableGolfers"
+	   			android:text="Find Nearby Golfers"
+	   			android:textColor="#FFFFFF"
+	   			android:layout_height="wrap_content" 
+	   			android:layout_width="fill_parent"
+	   			android:layout_centerHorizontal="true"
+	   			android:layout_marginTop="10dip"
+	   			android:layout_marginBottom="10dip"
+	   			android:layout_marginLeft="50dip"
+	   			android:layout_marginRight="50dip"
+	   			android:layout_below="@+id/ImageView_Header"
+	   			android:background="@drawable/button" />
+	   	
+	   	<Button android:id="@+id/Button_ViewCourses"
+	   			android:text="Find Nearby Golf Courses"
+	   			android:textColor="#FFFFFF"
+	   			android:layout_height="wrap_content" 
+	   			android:layout_width="fill_parent"
+	   			android:layout_centerHorizontal="true"
+	   			android:layout_marginBottom="10dip"
+	   			android:layout_marginLeft="50dip"
+	   			android:layout_marginRight="50dip"
+	   			android:layout_below="@+id/Button_ViewAvailableGolfers"
+	   			android:background="@drawable/button" />
+	   					
+		<Button android:id="@+id/Button_MyAccount"
+	   			android:text="Settings and Preferences"
+	   			android:padding="10dip"
+	   			android:textColor="#FFFFFF"
+	   			android:layout_height="wrap_content" 
+	   			android:layout_width="fill_parent"
+	   			android:layout_centerHorizontal="true"
+	   			android:layout_marginBottom="10dip"
+	   			android:layout_marginLeft="50dip"
+	   			android:layout_marginRight="50dip"
+	   			android:layout_below="@+id/Button_ViewCourses"
+	   			android:background="@drawable/button" />
+
+		<Button android:id="@+id/Button_ViewFeedback"
+	   			android:text="View My Feedback"
+	   			android:textColor="#FFFFFF"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content" 
+	   			android:layout_centerHorizontal="true"
+	   			android:layout_centerVertical="true"
+	   			android:layout_marginBottom="10dip"
+	   			android:layout_marginLeft="50dip"
+	   			android:layout_marginRight="50dip"
+	   			android:layout_below="@+id/Button_MyAccount"
+	   			android:background="@drawable/button" />
+	   	
+	   	<Button android:id="@+id/Button_Help"
+	   			android:text="Help"
+	   			android:textColor="#FFFFFF"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content" 
+	   			android:layout_centerHorizontal="true"
+	   			android:layout_marginBottom="10dip"
+	   			android:layout_marginLeft="50dip"
+	   			android:layout_marginRight="50dip"
+	   			android:layout_below="@+id/Button_ViewFeedback"
+	   			android:background="@drawable/button" />
+	   					
+			<Button android:id="@+id/Button_Logout"
+	   			android:text="Logout"
+	   			android:textColor="#FFFFFF"
+	   			android:layout_width="fill_parent"
+	   			android:layout_height="wrap_content" 
+	   			android:layout_centerHorizontal="true"
+	   			android:layout_marginBottom="10dip"
+	   			android:layout_marginLeft="50dip"
+	   			android:layout_marginRight="50dip"
+	   			android:layout_below="@+id/Button_Help"
+	   			android:background="@drawable/button" />
+	   	</RelativeLayout>		
+		</ScrollView>					
+		<SlidingDrawer 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/SlidingDrawer_Notifications"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:handle="@+id/Notifications_Header"
+	        android:content="@+id/ListView_Notifications"
+	        android:allowSingleTap="true"
+	        android:layout_alignParentBottom="true"
+	        android:orientation="vertical">
+	        
+	        <TextView
+		  	  android:id="@+id/Notifications_Header"
+			  android:text="Notifications"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content" 
+			  android:gravity="center" 
+			  android:background="@drawable/top_bar"
+			  android:textColor="#FFFFFF">
+			</TextView>
+	        
+	        <ListView
+			  xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="wrap_content"
+			  android:layout_height="wrap_content"
+			  android:background="#FFFFFF"
+			  android:listSelector="@drawable/list_selector"
+			  android:id="@+id/ListView_Notifications">
+			</ListView>
+        
+        	  <com.admob.android.ads.AdView
+				android:id="@+id/ad_main"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				myapp:backgroundColor="#000000"
+				myapp:primaryTextColor="#FFFFFF"
+				myapp:secondaryTextColor="#CCCCCC"/>
+        </SlidingDrawer> 
+        
+</RelativeLayout>

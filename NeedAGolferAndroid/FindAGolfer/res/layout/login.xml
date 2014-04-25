@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:myapp="http://schemas.android.com/apk/res/com.findagolfer.mobile"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+				  
+	    <ImageView
+	    	android:id="@+id/ImageView_Header_Login" 
+	    	android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/header" />
+			
+			<EditText android:id="@+id/EditText_Login_UserName" 
+					android:hint="Screen Name" 
+					android:layout_width="200dip" 
+					android:layout_height="wrap_content" 
+					android:imeOptions="actionNext"
+					android:maxLines="1"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="20dip"
+					android:layout_below="@+id/ImageView_Header_Login"
+					/>
+			<EditText 
+					android:id="@+id/EditText_Login_Password" 
+					android:hint="Password" 
+					android:layout_width="200dip" 
+					android:layout_height="wrap_content" 
+					android:imeOptions="actionDone" 
+					android:password="true"
+					android:maxLines="1"
+					android:layout_centerHorizontal="true"
+					android:layout_below="@+id/EditText_Login_UserName" />
+			<CheckBox android:id="@+id/Checkbox_SaveLoginCredentials"
+			   			android:text=" Save Login Credentials"
+			   			android:layout_height="wrap_content" 
+			   			android:layout_width="wrap_content"
+			   			android:textSize="12dp"
+			   			android:textColor="#000000"
+			   			android:layout_centerHorizontal="true" 
+			   			android:layout_centerVertical="true"  
+			   			android:checked="true"
+			   			android:layout_below="@+id/EditText_Login_Password"
+			   			/>
+			<Button android:id="@+id/Button_Login"
+			   			android:text="Login"
+			   			android:gravity="center"
+			   			android:textColor="#FFFFFF"
+			   			android:layout_height="wrap_content" 
+			   			android:layout_width="fill_parent"
+			   			android:layout_alignLeft="@+id/EditText_Login_Password"
+			   			android:layout_alignRight="@+id/EditText_Login_Password"
+			   			android:layout_below="@+id/Checkbox_SaveLoginCredentials"
+			   			android:layout_centerHorizontal="true"
+			   			android:background="@drawable/button" />
+			
+			  	   			
+			<Button android:id="@+id/Button_SignUp"
+			   			android:text="Not Registered?  Sign up!"
+			   			android:gravity="center"
+			   			android:textColor="#FFFFFF"
+			   			android:layout_height="wrap_content" 
+			   			android:layout_width="fill_parent"
+			   			android:layout_below="@+id/Button_Login"
+			   			android:padding="10dip"
+			   			android:layout_marginTop="10dip"
+			   			android:layout_alignLeft="@+id/EditText_Login_Password"
+			   			android:layout_alignRight="@+id/EditText_Login_Password"
+			   			android:layout_centerHorizontal="true"
+			   			android:background="@drawable/button" />
+			   			
+			<Button android:id="@+id/Button_ForgotPassword"
+			   			android:text="Forgot Password?"
+			   			android:gravity="center"
+			   			android:textColor="#FFFFFF"
+			   			android:layout_height="wrap_content" 
+			   			android:layout_width="fill_parent"
+			   			android:layout_below="@+id/Button_SignUp"
+			   			android:padding="10dip"
+			   			android:layout_marginTop="10dip"
+			   			android:layout_alignLeft="@+id/EditText_Login_Password"
+			   			android:layout_alignRight="@+id/EditText_Login_Password"
+			   			android:layout_centerHorizontal="true"
+			   			android:background="@drawable/button" />
+			   			   			
+			<com.admob.android.ads.AdView
+					android:id="@+id/ad_login"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					myapp:backgroundColor="#000000"
+					myapp:primaryTextColor="#FFFFFF"
+					myapp:secondaryTextColor="#CCCCCC"
+					android:layout_below="@+id/Button_ForgotPassword"
+					android:paddingTop="60dip"/>	
+
+</RelativeLayout>
+</ScrollView>

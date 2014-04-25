@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="NeedAGolfer">
+  <DataContextMoniker Name="/NeedAGolferDataContext" />
+  <nestedChildShapes>
+    <classShape Id="670c8f17-37a7-4799-9c49-2f342b073eea" absoluteBounds="7, 0.875, 2, 4.2708154296875">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolferStatusMessages_View" />
+      <nestedChildShapes>
+        <elementListCompartment Id="93f11dfd-91cf-4ac3-8790-43d0a087d944" absoluteBounds="7.015, 1.335, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="27bb2790-1e7e-45c1-8b8e-6219d2a347fb" absoluteBounds="2.25, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolfCourse_DiscountType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eebd3055-5c0d-48ec-89a1-cdc296bd9d61" absoluteBounds="2.265, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="807abf21-554a-4bcf-860d-9cd1473252f5" absoluteBounds="2.25, 2, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolfCourse_Event_ApprovedGolfer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ba18846-c4f9-46fc-b476-01aaaa466f15" absoluteBounds="2.265, 2.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1644166-f266-45ed-8cc4-7b9e41941bbe" absoluteBounds="0.5, 3.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolfCourse_GroupEvent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e348f7bf-cc36-4f6f-a70a-5c1a7753ba9f" absoluteBounds="0.51500000000000012, 4.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac91a61f-a10a-468d-ae74-5cf277bb92cc" absoluteBounds="2.25, 3.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolfCourse_OpenTeeTime" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c90e5a1-1603-49d3-ba8d-bfdc67a1ae59" absoluteBounds="2.265, 4.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67b2e1d8-a87f-4b46-8ac4-624be521ed18" absoluteBounds="6.5, 5.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolferPrivateMessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c536830-1c77-40d7-8e54-d5081717f8bd" absoluteBounds="6.515, 6.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c087618-d7cc-4eda-b3a6-af08de1a87df" absoluteBounds="4.25, 6.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolferStatusMessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed167950-2ce7-407a-bcce-1490ab1a5e6c" absoluteBounds="4.265, 6.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="69b28197-8abd-447f-82b6-5cd988467b0f" absoluteBounds="4.25, 2.375, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/NeedAGolferDataContext/Golfer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="38646880-29b6-4002-9e4a-26505d7ddb02" absoluteBounds="4.265, 2.835, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0a82ff8-54f8-44d4-9cbd-7d6d3a3fa364" absoluteBounds="4.625, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolferRating" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32be5d7f-1e6e-44fb-ae4e-efed51080b16" absoluteBounds="4.64, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c60013f-0091-4bfe-8aae-ce9e91fc7e91" absoluteBounds="7.75, 5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolferRatings_View" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b714239a-a0f5-441b-82a3-e20bbf65e059" absoluteBounds="7.765, 5.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c699438c-3faf-4c28-8812-6776083e8b77" absoluteBounds="4.875, 3.625, 2, 1.9631982421875">
+      <DataClassMoniker Name="/NeedAGolferDataContext/Logging" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62afc2cb-720a-4ef8-a5e3-b2fb1894b987" absoluteBounds="4.89, 4.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="478ac7f3-aab2-40bc-9cdd-284291233224" absoluteBounds="0.5, 0.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolferPrivateMessages_View" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f820caac-ec67-4ae2-ac51-7e2f728851cd" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab1841f8-7770-4169-98b7-0bc7f4839afc" absoluteBounds="8.625, 0.75, 2, 3.1170068359375">
+      <DataClassMoniker Name="/NeedAGolferDataContext/GolfCourse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e440dc4-f537-49e2-a70e-40051f1057ad" absoluteBounds="8.64, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

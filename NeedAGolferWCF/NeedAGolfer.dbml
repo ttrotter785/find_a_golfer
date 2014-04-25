@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NeedAGolfer" Class="NeedAGolferDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <!--<Connection Mode="ConnectionString" ConnectionString="Data Source=SENECA\SQLEXPRESS;Initial Catalog=NeedAGolfer;Integrated Security=True" Provider="System.Data.SqlClient" />-->
+  <Connection Mode="ConnectionString" ConnectionString="Server=HAZEL.arvixe.com;Database=NeedAGolfer;Uid=xerxes78;Password=coltsrule;" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.GolferStatusMessages_View" Member="GolferStatusMessages_Views">
+    <Type Name="GolferStatusMessages_View" Id="ID1">
+      <Column Name="GolferId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Handicap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsAvailable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowEmails" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Decimal(9,6)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Decimal(9,6)" CanBeNull="true" />
+      <Column Name="LastUpdated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ScreenName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="AvailabilityDistance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsCourseUser" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Message" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MessageCreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Rating" Type="System.Decimal" DbType="Decimal(38,6)" CanBeNull="true" />
+      <Column Name="NumRatings" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CourseName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolfCourse_DiscountType" Member="GolfCourse_DiscountTypes">
+    <Type Name="GolfCourse_DiscountType">
+      <Column Name="GolfCourse_DiscountType_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GolfCourse_DiscountTypeName" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolfCourse_Event_ApprovedGolfer" Member="GolfCourse_Event_ApprovedGolfers">
+    <Type Name="GolfCourse_Event_ApprovedGolfer">
+      <Column Name="GolfCourse_Event_ApprovedGolfer_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GolfCourse_EventId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GolferId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Accepted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolfCourse_GroupEvent" Member="GolfCourse_GroupEvents">
+    <Type Name="GolfCourse_GroupEvent">
+      <Column Name="GolfCourse_Event_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GolfCourseId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Organizer_GolferId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EventTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsFulfilled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolfCourse_OpenTeeTime" Member="GolfCourse_OpenTeeTimes">
+    <Type Name="GolfCourse_OpenTeeTime">
+      <Column Name="GolfCourse_OpenTeeTime_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GolfCourseId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeeTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GolfCourse_DiscountType_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiscountAmount" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolferPrivateMessage" Member="GolferPrivateMessages">
+    <Type Name="GolferPrivateMessage">
+      <Column Name="GolferPrivateMessageId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SendingGolferId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReceivingGolferId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RootGolferMessageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MessageCreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolferStatusMessage" Member="GolferStatusMessages">
+    <Type Name="GolferStatusMessage">
+      <Column Name="GolferMessageId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GolferId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MessageCreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Golfer" Member="Golfers">
+    <Type Name="Golfer">
+      <Column Name="GolferId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmailAddress" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Handicap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsAvailable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AllowEmails" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Decimal(9,6)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Decimal(9,6)" CanBeNull="true" />
+      <Column Name="LastUpdated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ScreenName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="PasswordHash" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="AvailabilityDistance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsCourseUser" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="HomeGolfCourseId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PasswordSalt" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="timestamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolferRatings" Member="GolferRatings">
+    <Type Name="GolferRating">
+      <Column Name="GolferRatingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GolferId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SubmittingGolferId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Rating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreateDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolferRatings_View" Member="GolferRatings_Views">
+    <Type Name="GolferRatings_View">
+      <Column Name="SubmitterName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="GolferId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Rating" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comments" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Logging" Member="Loggings">
+    <Type Name="Logging">
+      <Column Name="LoggingId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DeviceId" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="OSVersion" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="UserAccount" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DeviceType" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolferPrivateMessages_View" Member="GolferPrivateMessages_Views">
+    <Type Name="GolferPrivateMessages_View">
+      <Column Name="MessageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SenderScreenName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="SenderGolferId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReceiverScreenName" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="ReceiverGolferId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RootGolferMessageId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MessageCreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GolfCourse" Member="GolfCourses">
+    <Type Name="GolfCourse">
+      <Column Name="GolfCourse_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CourseName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CourseType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="County" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.GetNearbyGolfers" Method="GetNearbyGolfers">
+    <Parameter Name="latitude" Type="System.Decimal" DbType="Decimal(9,6)" />
+    <Parameter Name="longitude" Type="System.Decimal" DbType="Decimal(9,6)" />
+    <Parameter Name="radius" Type="System.Decimal" DbType="Decimal(9,6)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.GetNearbyGolfCourses" Method="GetNearbyGolfCourses">
+    <Parameter Name="latitude" Type="System.Decimal" DbType="Decimal(9,6)" />
+    <Parameter Name="longitude" Type="System.Decimal" DbType="Decimal(9,6)" />
+    <Parameter Name="radius" Type="System.Decimal" DbType="Decimal(9,6)" />
+    <ElementType Name="GetNearbyGolfCoursesResult">
+      <Column Name="GolfCourse_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Category" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CourseName" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="CourseType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="County" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ZipCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="Distance" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

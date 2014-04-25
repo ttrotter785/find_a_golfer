@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/res/com.findagolfer.mobile"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@drawable/background">
+  
+	<ImageView android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/header" />
+   			
+  <TextView 
+  	android:id="@+id/TextView_CourseProfile_CourseName"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:paddingLeft="10dip"
+  	android:textColor="#000000"
+  	android:textSize="24dip"></TextView>
+  
+    <TextView 
+  	android:id="@+id/TextView_CourseProfile_Address"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:paddingLeft="10dip"
+  	android:textColor="#000000"
+  	android:textSize="16dip"></TextView>
+  	
+  	<TextView 
+  	android:id="@+id/TextView_CourseProfile_CityStateZip"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:paddingLeft="10dip"
+  	android:textColor="#000000"
+  	android:textSize="16dip"></TextView>
+  	
+  	<TextView 
+  	android:id="@+id/TextView_CourseProfile_Phone"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:paddingLeft="10dip"
+  	android:textColor="#000000"
+  	android:textSize="16dip"></TextView>
+  	
+  	<TextView 
+  	android:id="@+id/TextView_CourseProfile_CourseType"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:paddingLeft="10dip"
+  	android:textColor="#000000"
+  	android:textSize="16dip"></TextView>
+  	
+  	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent">
+  	<RelativeLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:myapp="http://schemas.android.com/apk/res/com.findagolfer.mobile"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent">
+	  	<Button
+	  	android:id="@+id/Button_CourseProfile_CallCourse"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:background="@drawable/button"
+	  	android:textColor="#FFFFFF"
+	  	android:layout_marginLeft="10dip"
+	  	android:padding="10dip"
+	  	android:layout_marginTop="10dip"
+	  	android:layout_centerHorizontal="true"
+	  	android:text="Call This Golf Course"></Button>
+	  	
+	  	<Button
+	  	android:id="@+id/Button_CourseProfile_ViewOnMap"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:textColor="#FFFFFF"
+	  	android:background="@drawable/button"
+	  	android:layout_marginLeft="10dip"
+	  	android:padding="10dip"
+	  	android:layout_marginTop="10dip"
+	  	android:layout_centerHorizontal="true"
+	  	android:layout_below="@+id/Button_CourseProfile_CallCourse"
+	  	android:text="View This Course on a Map"></Button>
+	  	
+	  	<com.admob.android.ads.AdView
+	  	android:layout_marginTop="10dip"
+		android:id="@+id/ad_courseprofile"
+		android:layout_span="2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		myapp:backgroundColor="#000000"
+		myapp:primaryTextColor="#FFFFFF"
+		android:layout_below="@+id/Button_CourseProfile_ViewOnMap"
+		myapp:secondaryTextColor="#CCCCCC"/>
+	</RelativeLayout>	
+	</ScrollView>			
+</LinearLayout>

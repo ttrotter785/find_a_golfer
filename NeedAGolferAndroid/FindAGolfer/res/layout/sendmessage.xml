@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="#FFFFFF">
+  
+	<EditText
+		android:id="@+id/EditText_SendMessage_Text"
+		android:lines="7"
+	  	android:gravity="top"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content" 
+	  	android:layout_alignParentLeft="true"
+	  	android:imeOptions="actionDone">
+	</EditText>
+	
+	<TableLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	  	android:layout_width="fill_parent"
+	  	android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:stretchColumns="0,2">
+		<TableRow>
+		  	<Button
+				android:text="Send"
+				android:id="@+id/Button_SendMessage_Send"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content" 
+			  	android:layout_alignParentRight="true"
+			  	android:textColor="#FFFFFF"
+			  	android:gravity="center"
+			  	android:background="@drawable/button">
+			</Button>
+			<TextView 
+				android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content"
+			  	android:text="    "></TextView> 
+			<Button
+				android:text="Cancel"
+				android:id="@+id/Button_SendMessage_Cancel"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="wrap_content" 
+			  	android:textColor="#FFFFFF"
+			  	android:gravity="center"
+			  	android:layout_alignParentRight="true"
+			  	android:background="@drawable/button">
+			</Button>
+		</TableRow>
+	</TableLayout>		
+</LinearLayout>

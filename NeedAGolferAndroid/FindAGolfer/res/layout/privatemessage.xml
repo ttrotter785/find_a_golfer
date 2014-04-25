@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@color/list_item_bg">
+  
+  	<TableLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:id="@+id/TableLayout_PrivateMessages"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:padding="5dip">
+	
+		<TableRow>
+			<TextView 
+	 		android:id="@+id/TextView_PrivateMessages_ScreenName"
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		android:textSize="12dip"
+	  		android:paddingRight="5dip"
+	  		android:textColor="#000000"
+	  		android:text="ScreenName"/>
+	  		<TextView 
+	 		android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		android:textSize="12dip"
+	  		android:paddingRight="5dip"
+	  		android:textColor="#000000"
+	  		android:text="about"/>
+	  		<TextView 
+	 		android:id="@+id/TextView_PrivateMessages_WhenSent"
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+	  		android:textColor="#000000"
+	  		android:textSize="12dip"
+	  		android:text="1/1/2011"/>
+	  	</TableRow>
+	</TableLayout>
+	
+	<TextView 
+ 		android:id="@+id/TextView_PrivateMessages_MessageBody"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_span="3"
+  		android:textSize="18dip"
+  		android:paddingLeft="5dip"
+	  	android:textColor="#000000"
+  		android:text="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum "/>
+  
+</LinearLayout>

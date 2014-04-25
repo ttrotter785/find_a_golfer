@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:myapp="http://schemas.android.com/apk/res/com.findagolfer.mobile"
+	  android:layout_width="wrap_content"
+	  android:layout_height="fill_parent"
+	  android:orientation="vertical"
+	  android:background="#FFFFFF">
+	
+		<ImageView android:layout_height="wrap_content" 
+   			android:layout_width="fill_parent"
+   			android:layout_centerHorizontal="true"
+   			android:background="@drawable/header" />
+	   			
+		 <TableLayout
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:padding="5dip"
+		  android:stretchColumns="1"
+		  android:shrinkColumns="1"
+		  >
+		  
+		  <TableRow>
+		  	<TextView 
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#000000"
+		  		android:text="Screen Name:" />
+		  	<TextView
+		  		android:id="@+id/TextView_Profile_ScreenName"
+		  		android:textColor="#000000"
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content" />	
+		  </TableRow>
+		  
+		  <TableRow>
+		      <TextView 
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#000000"
+		  		android:text="Handicap:" />
+		  	<TextView
+		  		android:id="@+id/TextView_Profile_Handicap"
+		  		android:textColor="#000000"
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:inputType="number" />	
+		  </TableRow>
+		  
+		    <TableRow>
+		     <TextView 
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#000000"
+		  		android:text="# Ratings:" />
+		  	<TextView
+		  		android:id="@+id/TextView_Profile_NumRatings"
+		  		android:textColor="#000000"
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"/>	
+		  </TableRow>
+		  
+		  <TableRow>
+		     <TextView 
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:textColor="#000000"
+		  		android:text="Available to Play:" />
+		  	<CheckBox
+		  		android:background="@drawable/small_checkbox_bg" 
+  				android:button="@drawable/small_checkbox" 
+  				android:id="@+id/CheckBox_Profile_IsAvailable"
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		android:enabled="false" />	
+		  </TableRow>
+		<TableRow>
+		     <RatingBar
+		  		android:id="@+id/RatingBar_Profile_Rating"
+		  		android:layout_width="wrap_content"
+		  		android:layout_height="wrap_content"
+		  		style="@style/golfRatingBar"
+		  		android:numStars="5"
+		  		android:rating="0.0"
+		  		android:stepSize="1.0"
+		  		android:isIndicator="true"/>	
+		  </TableRow>
+			<TableRow>
+				<Button
+			  		android:id="@+id/Button_Profile_RateThisGolfer"
+			  		android:textColor="#FFFFFF"
+		  			android:text="Rate This Golfer"
+			  		android:layout_span="2"
+			  		android:layout_width="wrap_content"
+			  		android:layout_height="wrap_content"
+			  		android:layout_marginRight="20dip"
+			  		android:layout_marginLeft="20dip"
+			  		android:enabled="true"
+			  		android:gravity="center"
+			  		android:layout_marginBottom="5dip"
+			  		android:background="@drawable/button" />	
+			</TableRow>
+		</TableLayout>
+		<LinearLayout
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+		  xmlns:myapp="http://schemas.android.com/apk/res/com.findagolfer.mobile"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:background="#FFFFFF"
+		  android:orientation="vertical">
+	
+			<ListView
+			  xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_span="2"
+			  android:choiceMode="singleChoice"
+			  android:listSelector="@drawable/list_selector"
+			  android:id="@+id/ListView_ViewProfile_Comments">
+			</ListView>		
+		
+		</LinearLayout>	
+	</LinearLayout>

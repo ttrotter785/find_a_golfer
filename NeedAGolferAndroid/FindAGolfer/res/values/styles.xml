@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="golfRatingBar" parent="@android:style/Widget.RatingBar">
+		<item name="android:progressDrawable">@drawable/golf_rating_bar_full</item>
+		<item name="android:minHeight">48dip</item>
+  		<item name="android:maxHeight">48dip</item>
+	</style>
+	<style name="golfRatingBarIndicator" parent="@android:style/Widget.RatingBar.Indicator">
+		<item name="android:progressDrawable">@drawable/golf_rating_bar_indicator</item>
+		<item name="android:minHeight">48dip</item>
+  		<item name="android:maxHeight">48dip</item>
+	</style>
+	<style name="golfRatingBarSmall" parent="@android:style/Widget.RatingBar.Small">
+		<item name="android:progressDrawable">@drawable/golf_rating_bar_small</item>
+		<item name="android:minHeight">22dip</item>
+  		<item name="android:maxHeight">22dip</item>
+	</style>
+</resources>
